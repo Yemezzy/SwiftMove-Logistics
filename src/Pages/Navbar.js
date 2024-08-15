@@ -11,12 +11,12 @@ const Navbar = () => {
         <nav>
         <div className='text-sm p-2 md:px-10 px-3 bg-[#0C1B2E] w-full text-white flex justify-center md:justify-between'>
             <section className='flex justify-center gap-'> 
-                <div className='flex gap-1 items-center border-r pr-3 md:pr-5'>
+                <div className='flex gap-1 md:text-base text-xs items-center border-r pr-3 md:pr-5'>
                 <HiOutlineMail className='text-base'/>
                     <p>sara.cruz@example.com</p>
                     </div>
 
-                <div className='flex gap-1 items-center md:px-5 px-3'>
+                <div className='flex gap-1 md:text-base text-xs items-center md:px-5 px-3'>
                 <FaPhoneAlt className='text-base'/>
                 <p>+012 345 6789</p>
                 </div>
