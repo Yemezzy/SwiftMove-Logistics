@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import {  FaLocationCrosshairs, FaTelegram } from "react-icons/fa6";
-import { FaFacebook } from "react-icons/fa";
+import {  FaBars, FaLocationCrosshairs, FaTelegram } from "react-icons/fa6";
+import { FaFacebook, FaHamburger } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaDotCircle, FaGreaterThan, FaHeadset, FaLocationArrow, FaPhoneAlt, FaSearch } from "react-icons/fa";
 
@@ -55,8 +55,11 @@ const Navbar = () => {
                 </Link>      
             </ul>
 
-            <button className='bg-[#c11425] px-5 text-white text-sm py-2'>
+            <button className='bg-[#c11425] px-5 hidden md:block text-white text-sm py-2'>
                 Track & Trace
+            </button>
+            <button className='bg-[#c11425] md:hidden block px-5 text-white text-sm py-2'>
+                <FaBars/>
             </button>
         </div>
       </nav>
