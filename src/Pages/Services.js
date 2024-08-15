@@ -15,7 +15,7 @@ const Services = () => {
 
       <div className='md:mt-20'>
         <div className=''>
-<div className='md:px-10 px-2 text-white grid md:grid-cols-3 mt-2 md:mt-5 gap-3'>
+<div className='md:px-10 px-5 text-white grid md:grid-cols-3 mt-2 md:mt-5 gap-3'>
 <section className='flex items-end  h-[250px] sec1'>
 <p className='p-2 text-xl text-center font-bold bg-[#c11425] w-full'>Air Freight</p>
 </section>

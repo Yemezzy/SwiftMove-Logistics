@@ -29,7 +29,7 @@ our clients and building a strong track record in the industry.
       </div>
 
 
-      <div className='md:mt-20 md:px-5 px-3'>
+      <div className='md:mt-20 px-5'>
 <div className='mt:pt-20 mt-10'>
     <p className='text-3xl text-center md:text-left font-bold'>ABOUT US</p>
     <div className='md:flex md:mt-5 mt-2 md:text-base text-sm'>
@@ -66,7 +66,7 @@ our clients and building a strong track record in the industry.
       <div className='md:mt-20'>
         <div className='pt-20'>
 <p className='text-center  md:text-4xl text-2xl font-semibold'>Our Awesome Services</p>
-<div className='md:px-20 px-2 text-white grid md:grid-cols-3 mt-2 md:mt-5 gap-3'>
+<div className='md:px-20 px-5 text-white grid md:grid-cols-3 mt-2 md:mt-5 gap-3'>
 <section className='flex items-end  h-[250px] sec1'>
 <p className='p-2 text-xl text-center font-bold bg-[#c11425] w-full'>Air Freight</p>
 </section>
@@ -187,7 +187,7 @@ I've been using this shipping company for a while now, and I must say, they neve
       </div>
 
       <div className='mt-24'>
-        <div className='md:px-20 px-2 md:pt-20 grid md:grid-cols-2 gap-5 md:gap-0'>
+        <div className='md:px-20 px-5 md:pt-20 grid md:grid-cols-2 gap-5 md:gap-0'>
             <section>
                 <p className='text-[#c11425] text-xl font-bold'>Get A Quote</p>
               <p className='md:text-4xl text-2xl font-semibold md:mt-3'>

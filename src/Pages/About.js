@@ -18,7 +18,7 @@ const About = () => {
       <p className='flex items-center gap-2 mt-3 md:text-4xl text-2xl uppercase font-bold text-white'><FaDotCircle className='md:text-xl'/> About Us</p>
       </div>
 
-      <div className='md:flex md:pt-20 pt-10 mt-2 px-2 md:px-10 md:text-base text-sm'>
+      <div className='md:flex md:pt-20 pt-10 mt-2 px-3 md:px-10 md:text-base text-sm'>
       <section className='md:w-[50%]'>
             <p>
             We ensure the safe delivery of packages is my top priority.
@@ -50,7 +50,7 @@ const About = () => {
     <div className='mt-24'>
         <p className='text-center text-lg font-bold'>Testimonial</p>
         <p className='md:text-5xl text-2xl text-center font-semibold'>Our Clients Say!</p>
-        <div className='md:mt-10 mt-5 grid md:grid-cols-3 gap-2 md:gap-5 px-2 md:px-20'>
+        <div className='md:mt-10 mt-5 grid md:grid-cols-3 gap-2 md:gap-5 px-5 md:px-20'>
             <section className=' p-5 border-black border-2'>
 <div className='flex items-end'>
     <img src="https://demo.htmlcodex.com/2202/shipping-company-website-template/img/testimonial-4.jpg" className="w-[100px] h-[100px]" alt="" />

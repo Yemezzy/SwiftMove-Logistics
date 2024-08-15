@@ -12,7 +12,7 @@ const Contact = () => {
       <p className='flex items-center gap-2 mt-3 md:text-4xl text-2xl uppercase font-bold text-white'><FaDotCircle className='md:text-xl'/> Contact Us</p>
       </div>
 
-      <div className='md:px-20 mt-20 flex justify-center'>
+      <div className='md:px-20 px-5 mt-20 flex justify-center'>
       <section className='bg-[#0C1B2E] md:p-5 p-2 md:w-[70%]'>
 <form action="">
     <div className='md:flex gap-2'>
