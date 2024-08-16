@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaDotCircle, FaGreaterThan, FaHeadset, FaLocationArrow, FaPhoneAlt, FaSearch } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
 import { TbTruckDelivery } from "react-icons/tb";
@@ -6,6 +6,21 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 const Home = () => {
+    const [track, setTrack] = useState("")
+    const item1 = "44940494"
+    const [error, setError] = useState("")
+    const show = (event) => { 
+   
+        if (track === item1) {
+            setTimeout(() => {
+                window.location.href = "/about-us"
+            }, 2000);  
+        }else{
+            setError("Incorrect user tracking ID")
+        }
+      };
+
+
   return (
     <div>
     
@@ -15,16 +30,17 @@ const Home = () => {
 <section className='md:w-[60%] w-full text-white'>
 <p className='md:mt-36 mt-10 md:text-7xl text-4xl font-bold text-white'>SwiftMove Global Logistic Service </p>
 <p className='md:mt-5 mt-2 md:text-xl '>
-Driven Logistics
+SwiftMove Logistics
 We have been operating for over a decade, providing top-notch services to 
 our clients and building a strong track record in the industry.
 </p>
-<form action="" className='mt-10 md:flex text-black bg-[#c11425] p-2'>
-    <input type="text" required placeholder='Your Tracking ID' className='outline-none border-none md:w-[70%] w-full text-black h-[50px] px-3'/>
-    <button className='md:w-[30%] w-full md:mt-0 mt-2 md:py-0 py-2 font-bold text-white border-4 border-white'>
+<div className='mt-10 md:flex text-black bg-[#c11425] p-2'>
+    <input type="text" value={track} onChange={(event)=> setTrack(event.target.value)}  required placeholder='Your Tracking ID' className='outline-none border-none md:w-[70%] w-full text-black h-[50px] px-3'/>
+    <button onClick={show} className='md:w-[30%] w-full md:mt-0 mt-2 md:py-0 py-2 font-bold text-white border-4 border-white'>
         TRACK & TRACE
     </button>
-</form>
+</div>
+    <p className='mt-2 text-red-500 text-center uppercase'>{error}</p>
 </section>
       </div>
 

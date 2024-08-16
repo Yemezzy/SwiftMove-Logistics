@@ -3,23 +3,51 @@ import { Link } from 'react-router-dom';
 import {  FaBars, FaLocationCrosshairs, FaTelegram } from "react-icons/fa6";
 import { FaFacebook, FaHamburger } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { FaDotCircle, FaGreaterThan, FaHeadset, FaLocationArrow, FaPhoneAlt, FaSearch } from "react-icons/fa";
+import Button from '@mui/material/Button';
+import ClickAwayListener from '@mui/material/ClickAwayListener';
+import Grow from '@mui/material/Grow';
+import Paper from '@mui/material/Paper';
+import Popper from '@mui/material/Popper';
+import MenuItem from '@mui/material/MenuItem';
+import MenuList from '@mui/material/MenuList';
+import Stack from '@mui/material/Stack';
 
 const Navbar = () => {
+
+    const [open, setOpen] = React.useState(false);
+    const anchorRef = React.useRef(null);
+  
+    const handleToggle = () => {
+      setOpen((prevOpen) => !prevOpen);
+    };
+  
+    const handleClose = (event) => {
+      if (anchorRef.current && anchorRef.current.contains(event.target)) {
+        return;
+      }
+  
+      setOpen(false);
+    };
+  
+    function handleListKeyDown(event) {
+      if (event.key === 'Tab') {
+        event.preventDefault();
+        setOpen(false);
+      } else if (event.key === 'Escape') {
+        setOpen(false);
+      }
+    }
+
   return (
     <div>
         <nav>
         <div className='text-sm p-2 md:px-10 px-3 bg-[#0C1B2E] w-full text-white flex justify-center md:justify-between'>
             <section className='flex justify-center gap-'> 
-                <div className='flex gap-1 md:text-base text-xs items-center border-r pr-3 md:pr-5'>
+                <div className='flex gap-1 md:text-base text-xs items-center pr-3 md:pr-5'>
                 <HiOutlineMail className='text-base'/>
                     <p>sara.cruz@example.com</p>
                     </div>
 
-                <div className='flex gap-1 md:text-base text-xs items-center md:px-5 px-3'>
-                <FaPhoneAlt className='text-base'/>
-                <p>+012 345 6789</p>
-                </div>
             </section>
             <section className='md:flex hidden gap-'> 
                 <div className='flex gap-1 items-center border-r pr-5'>
@@ -55,15 +83,69 @@ const Navbar = () => {
                 </Link>      
             </ul>
 
+            <Link to="/">
             <button className='bg-[#c11425] px-5 hidden md:block text-white text-sm py-2'>
                 Track & Trace
             </button>
-            <button className='bg-[#c11425] md:hidden block px-5 text-white text-sm py-2'>
+            </Link>
+            <button     ref={anchorRef}
+          id="composition-button"
+          aria-controls={open ? 'composition-menu' : undefined}
+          aria-expanded={open ? 'true' : undefined}
+          aria-haspopup="true"
+          onClick={handleToggle} className='bg-[#c11425] md:hidden block px-5 text-white text-sm py-2'>
                 <FaBars/>
             </button>
         </div>
       </nav>
-
+<div>
+ <Stack direction="row" spacing={2}>
+ <div>
+   <Popper
+          open={open}
+          anchorEl={anchorRef.current}
+          role={undefined}
+          placement="bottom-start"
+          transition
+          disablePortal
+        >
+          {({ TransitionProps, placement }) => (
+            <Grow
+              {...TransitionProps}
+              style={{
+                transformOrigin:
+                  placement === 'bottom-start' ? 'left top' : 'left bottom',
+              }}
+            >
+              <Paper>
+                <ClickAwayListener onClickAway={handleClose}>
+                  <MenuList
+                    autoFocusItem={open}
+                    id="composition-menu"
+                    aria-labelledby="composition-button"
+                    onKeyDown={handleListKeyDown}
+                  >
+                    <Link to="/">               
+                    <MenuItem onClick={handleClose}>Home</MenuItem>
+                    </Link>
+                    <Link to="/About-us">
+                    <MenuItem onClick={handleClose}>About Us</MenuItem>
+                    </Link>
+                    <Link to="/Services">
+                    <MenuItem onClick={handleClose}>Services</MenuItem>
+                    </Link>
+                    <Link to="/Contact-us">
+                    <MenuItem onClick={handleClose}>Contact Us</MenuItem>
+                    </Link>
+                  </MenuList>
+                </ClickAwayListener>
+              </Paper>
+            </Grow>
+          )}
+        </Popper>
+ </div>
+ </Stack>
+</div>
     </div>
   )
 }

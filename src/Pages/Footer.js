@@ -26,7 +26,7 @@ const Footer = () => {
         <p>Be the first to know about new services, special promotions, and exclusive offers tailored to your logistics need. 
             Join our mailing list and stay connected with the latest development in the world of logistics!</p>
             <form action="" className='mt-2 md:flex text-black'>
-        <input type="text" required placeholder='Your Email' className='outline-none border-none md:w-[70%] w-full text-black h-[50px] px-3'/>
+        <input type="email" required placeholder='Your Email' className='outline-none border-none md:w-[70%] w-full text-black h-[50px] px-3'/>
         <button className='md:w-[30%] bg-[#c11425] mb-2 md:mb-0 w-full md:mt-0 mt-2 md:py-0 py-2 font-bold text-white border-4 border-white'>
             Submit
         </button>
