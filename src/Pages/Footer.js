@@ -12,7 +12,7 @@ const Footer = () => {
             <p className='md:text-2xl text-xl text-[#c11425] font-bold mb-2 md:mb-5 mt-5 md:mt-0'>Address</p>
             <p className='flex items-center gap-2'><FaLocationCrosshairs/>123 Street, New York, USA</p>
             <p className='flex items-center gap-2 mt-3'><FaPhoneAlt/>+012 345 67890</p>
-            <p className='flex items-center gap-2 mt-3'><HiOutlineMail/>info@example.com</p>
+            <p className='flex items-center gap-2 mt-3'><HiOutlineMail/>info@globalshipwave.com</p>
         </section>
         <section>
         <p className='md:text-2xl text-xl text-[#c11425] font-bold mb-2 md:mb-5 mt-5 md:mt-0'>Services</p>

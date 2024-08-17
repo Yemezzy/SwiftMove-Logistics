@@ -16,7 +16,9 @@ const Home = () => {
                 window.location.href = "/about-us"
             }, 2000);  
         }else{
-            setError("Incorrect user tracking ID")
+            setTimeout(() => {               
+                setError("Incorrect user tracking ID")
+            }, 1000);
         }
       };
 
@@ -215,8 +217,8 @@ I've been using this shipping company for a while now, and I must say, they neve
               <div className='md:mt-10 mt-5 flex items-end gap-5'>
                 <FaHeadset className='text-7xl text-white p-4 bg-[#c11425]'/>
                 <div>
-                    <p className='font-semibold'>Call for any query!</p>
-                    <p className='text-2xl font-bold text-[#c11425]'>+012 345 6789</p>
+                    <p className='font-semibold'>Email for any query!</p>
+                    <p className='text-2xl font-bold text-[#c11425]'>info@globalshipwave.com</p>
                 </div>
               </div>
             </section>
