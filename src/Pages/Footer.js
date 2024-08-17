@@ -10,8 +10,7 @@ const Footer = () => {
     <div className='grid md:grid-cols-3 md:text-lg text-sm font-medium md:py-10'>
         <section>
             <p className='md:text-2xl text-xl text-[#c11425] font-bold mb-2 md:mb-5 mt-5 md:mt-0'>Address</p>
-            <p className='flex items-center gap-2'><FaLocationCrosshairs/>123 Street, New York, USA</p>
-            <p className='flex items-center gap-2 mt-3'><FaPhoneAlt/>+012 345 67890</p>
+            <p className='flex gap-2'><FaLocationCrosshairs/>34 isla Drive, Lubbesthorpe, Leicester, England, LE19 4BN</p>
             <p className='flex items-center gap-2 mt-3'><HiOutlineMail/>info@globalshipwave.com</p>
         </section>
         <section>

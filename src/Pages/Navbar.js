@@ -45,7 +45,7 @@ const Navbar = () => {
             <section className='flex justify-center gap-'> 
                 <div className='flex gap-1 md:text-base text-xs items-center pr-3 md:pr-5'>
                 <HiOutlineMail className='text-base'/>
-                    <p>info@globalshipwave.com</p>
+                    <a href="mailto:info@globalshipwave.com">info@globalshipwave.com</a>
                     </div>
 
             </section>

@@ -7,7 +7,7 @@ import Footer from './Footer';
 
 const Home = () => {
     const [track, setTrack] = useState("")
-    const item1 = "44940494"
+    const item1 = "GSW44940494-50509ID"
     const [error, setError] = useState("")
     const show = (event) => { 
    
@@ -117,10 +117,11 @@ our clients and building a strong track record in the industry.
     </section>
    <p className='md:text-5xl text-2xl font-semibold'>Track Your Order</p>
    <p className='text-lg'>Enter your Track Id For Instant Search</p>
-   <form action="" className='flex items-center border-b px-1 mt-5'>
-    <input type="text" placeholder='TRACKING ID' className='w-full text-white text-lg mt-2 h-[50px] outline-none bg-transparent'/>
-    <button><FaSearch className='text-lg'/></button>
-   </form>
+   <div action="" className='flex items-center border-b px-1 mt-5'>
+    <input type="text" value={track} onChange={(event)=> setTrack(event.target.value)}  placeholder='TRACKING ID' className='w-full text-white text-lg mt-2 h-[50px] outline-none bg-transparent'/>
+    <button><FaSearch onClick={show} className='text-lg'/></button>
+   </div>
+   <p className='mt-2 text-red-500 text-center uppercase'>{error}</p>
    {/* <div className='flex gap-3 justify-end mt-3'>
     <FaPhoneAlt/>
     <FaTelegram/>
