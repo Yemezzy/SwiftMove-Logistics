@@ -30,9 +30,9 @@ const Home = () => {
 
       <div className='jojo md:h-[670px] p-5'>
 <section className='md:w-[60%] w-full text-white'>
-<p className='md:mt-36 mt-10 md:text-7xl text-4xl font-bold text-white'>SwiftMove Global Logistic Service </p>
+<p className='md:mt-36 mt-10 md:text-7xl text-4xl font-bold text-white'>GlobalShipWave Logistic Service </p>
 <p className='md:mt-5 mt-2 md:text-xl '>
-SwiftMove Logistics
+GlobalShipWave Logistics
 We have been operating for over a decade, providing top-notch services to 
 our clients and building a strong track record in the industry.
 </p>
@@ -219,7 +219,9 @@ I've been using this shipping company for a while now, and I must say, they neve
                 <FaHeadset className='text-7xl text-white p-4 bg-[#c11425]'/>
                 <div>
                     <p className='font-semibold'>Email for any query!</p>
+                    <a href="mailto:info@globalshipwave.com">
                     <p className='text-2xl font-bold text-[#c11425]'>info@globalshipwave.com</p>
+                    </a>
                 </div>
               </div>
             </section>

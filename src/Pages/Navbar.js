@@ -50,14 +50,21 @@ const Navbar = () => {
 
             </section>
             <section className='md:flex hidden gap-'> 
-                <div className='flex gap-1 items-center border-r pr-5'>
-                <FaTelegram className='text-base'/>
+          <a href="https://t.me//globalshipwave">
+          </a>
+          <div className='flex gap-1 items-center border-r pr-5'>
+                <FaTelegram className='text-base'/>                
+                    <a href="https://t.me//globalshipwave">
                     <p>Telegram</p>
+                    </a>
                     </div>
 
                 <div className='flex gap-1 items-center px-5'>
                 <FaFacebook className='text-base'/>
+                <a href="https://t.me//globalshipwave">
                 <p>Facebook</p>
+                    </a>
+                
                 </div>
             </section>
         </div>
@@ -65,7 +72,7 @@ const Navbar = () => {
         <div className='text- font-semibold flex justify-between items-center px-3 md:px-10 py-2'>
             <div className='flex-col flex items-center'>
             <img src="./img/Asset 1.png" alt="" className='md:w-20 w-[50px]'/>
-            <p className='font-extrabold md:block  md:text-xs text-[5px]'>SwiftMove Logistics</p>
+            <p className='font-extrabold md:block  md:text-xs text-[5px]'>GlobalShipWave</p>
             </div>
 
             <ul className='md:flex hidden justify-between md:w-[30%]'>
