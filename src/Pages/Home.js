@@ -13,7 +13,7 @@ const Home = () => {
    
         if (track === item1) {
             setTimeout(() => {
-                window.location.href = "/about-us"
+                window.location.href = "/tracking/GSW44940494-50509ID"
             }, 2000);  
         }else{
             setTimeout(() => {               
