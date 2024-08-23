@@ -86,11 +86,22 @@ const Tracking1 = () => {
 
 <div className='flex items-center gap-3 text-lg md:text-2xl font-extrabold'>
             <FaLandmark className='text-2xl'/>
-            <p>Arrived, GlobalShipWave Facility.</p>
+            <p>Arrived at GlobalShipWave Facility.</p>
         </div>
         <div className='md:h-[150px] h-[100px] border-l-4 border-dotted border-black p-2 px-2 md:px-7 ml-2 mt-1'>
 <p className='font-normal'>Ankara, Turkey.</p>
-<p className='font-normal'>August 23, 2024, 05:00am.</p>
+<p className='font-normal'>August 22, 2024, 05:00am.</p>
+        </div>
+</div>
+<div>
+
+<div className='flex items-center gap-3 text-lg md:text-2xl font-extrabold'>
+            <FaLandmark className='text-2xl'/>
+            <p>Departed GlobalShipWave Facility.</p>
+        </div>
+        <div className='md:h-[150px] h-[100px] border-l-4 border-dotted border-black p-2 px-2 md:px-7 ml-2 mt-1'>
+<p className='font-normal'>Ankara, Turkey.</p>
+<p className='font-normal'>August 23, 2024, 07:45pm.</p>
         </div>
 </div>
       </div>
