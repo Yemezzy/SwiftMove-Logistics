@@ -111,8 +111,8 @@ const Tracking1 = () => {
             <p>Arrived at GlobalShipWave Facility.</p>
         </div>
         <div className='md:h-[150px] h-[100px] border-l-4 border-dotted border-black p-2 px-2 md:px-7 ml-2 mt-1'>
-<p className='font-normal'>USA.</p>
-{/* <p className='font-normal'>August 23, 2024, 07:45am.</p> */}
+<p className='font-normal'>New York, USA.</p>
+<p className='font-normal'>November 25, 2024, 03:50am.</p>
         </div>
 </div>
       </div>
